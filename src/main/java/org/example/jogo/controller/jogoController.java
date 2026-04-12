@@ -36,7 +36,7 @@ public class jogoController {
     public Jogo atualizar(@RequestBody @Valid Jogo jogo,@PathVariable Long codigoAtivacao){
         return service.atualizar(jogo,codigoAtivacao);
     }
-    @DeleteMapping("/Jogo/{codigoAtivacao}")
+    @DeleteMapping("/deletarJogo/{codigoAtivacao}")
     public void deletar(@PathVariable Long codigoAtivacao){
         service.deletar(codigoAtivacao);
     }

@@ -29,7 +29,7 @@ public class jogoService {
         return repository.findAll();
     }
     public Jogo buscarNome(String nome){
-        return repository.findBynomeContainingIgnoreCase(nome);
+        return repository.findByNomeContainingIgnoreCase(nome);
     }
 
     public void deletar(Long codigoAtivacao){
